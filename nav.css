@@ -18,12 +18,12 @@
 	color: rgb(0, 0, 0);
 	font-size: 0.75rem;
 	line-height: 80px;
-	padding: 0 30px;
+	padding-left: 5%;
 	font-weight: bold;
   }
   nav ul{
 	float: right;
-	margin-right: 20px;
+	margin-right: 5%;
   }
   nav ul li{
 	display: inline-block;
@@ -98,9 +98,9 @@
 	width: 100%;
 	background-image: url(/assets/milkfish.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-size:contain;
+	background-size: 70%;
 	background-position:center;
+
 	
 	}
 
@@ -317,6 +317,7 @@
 
  .about-p {
 	font-family: "play", sans-serif;
+	font-size: 1rem;
  }
 	/* projects start */ 
 
@@ -456,7 +457,7 @@
 		  }
 		  
 		  .static-side {
-			flex: 1;
+			flex: .5;
 			overflow: hidden;
 			height: 30%;
 			text-align: left;
@@ -495,7 +496,7 @@
 }
 
 input, button, textarea {
-	border: 2px solid rgba(0, 0, 0, 0.6);
+	border: 2px solid rgba(0, 0, 0, 0.356);
 	background-image: none;
 	background-color: #dadad300;
 	-webkit-box-shadow: none;
@@ -507,14 +508,17 @@ input, button, textarea {
   input:focus, button:focus, textarea:focus {
 	outline: none;
   }
+
+
+  #fs-frm .placeholder {
+	margin-top: 8px;
+  }
   
   textarea {
 	min-height: 50px;
 	resize: vertical;
   }
 
-  
-  
   button {
 	cursor: pointer;
 	font-weight: 500;
@@ -543,7 +547,34 @@ input, button, textarea {
   .feedback-body__message {
 	margin-top: 10px;
   }
-  .feedback-body button {
+ 
+
+  .justify-content-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: black 1px solid;
 	margin-top: 10px;
-	align-self: flex-end;
   }
+
+  #copy {
+	color: black;
+  }
+
+.btn-primary {
+    color: #fff;
+    background-color: #ffffff;
+}
+
+.feedback-body__submit {
+	color: white;
+	background-color: black;
+	margin-top: 10px;
+	font-family: 'Inter', sans-serif;
+}
+  
+.footer a {
+	color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+

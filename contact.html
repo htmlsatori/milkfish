@@ -11,7 +11,14 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <nav>
@@ -27,32 +34,72 @@
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
-   
-    
+
     <div class="contact">
-        <div class="panel">
-          <div class="panel-default feedback-card">
-            <div class="feedback-header">CONTACT US</div>
-            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqwrgvn" method="post" class="feedback-body">
-              <input
-              type="text" name="name" id="full-name" placeholder="Name" class="placeholder"
-              />
-              <input
-              type="email" name="_replyto" id="email-address" placeholder="Email" required="" class="placeholder"><textarea
-              name="message" id="message" placeholder="Message" class="placeholder"
-              ></textarea
-              ><button class="feedback-body__submit">SEND</button>
-            </form>
-          </div>
+      <div class="panel">
+        <div class="panel-default feedback-card">
+          <div class="feedback-header">CONTACT US</div>
+          <form
+            id="fs-frm"
+            name="simple-contact-form"
+            accept-charset="utf-8"
+            action="https://formspree.io/f/xeqwrgvn"
+            method="post"
+            class="feedback-body"
+          >
+            <input
+              type="text"
+              name="name"
+              id="full-name"
+              required=""
+              placeholder="Name"
+              class="placeholder"
+            />
+            <input
+              type="email"
+              name="_replyto"
+              id="email-address"
+              placeholder="Email"
+      
+              class="placeholder"
+            /><textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+          
+              class="placeholder"
+            ></textarea>
+            <button class="feedback-body__submit">SEND</button>
+            <div class="justify-content-center">
+              <button
+                style="
+                  background-color: white;
+                  border: none;
+                  color: black;
+                  margin-right: none;
+                "
+                id="copy"
+                class="btn btn-primary"
+                data-clipboard-text="satorijal@gmail.com"
+              >
+              OR COPY EMAIL
+              </button>
+            </div>
+          </form>
         </div>
       </div>
+    </div>
 
     <!--hero end-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 
     <!--footer start-->
     <footer>
       <div class="footer">
-        <div class="row">
+    
           <div class="inner-foot">
             <div class="foot">
               <a href="https://www.figma.com/@milkfish" target="”_blank”"
@@ -76,6 +123,8 @@
       </div>
     </footer>
     <!--footer end-->
-  </body>
+    <script src="app.js"></script>
+
+    <!-- Trigger -->
   </body>
 </html>
