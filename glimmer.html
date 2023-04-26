@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Glimmer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -24,7 +24,18 @@
         <li><a class="active" href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/work">Work</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><span style="border: 1px dotted gray; padding: 10px 10px">
+          <strong
+            style="
+              font-family: 'inter', sans-serif;
+              font-size: 0.8rem;
+              margin-right: 10px;
+              font-weight: 400;
+              text-transform: uppercase;
+            "
+            id="clipboard-text"
+            >hello@milkfish.com</strong
+          ></li>
       </ul>
     </nav>
    <!--section about start -->
@@ -91,6 +102,32 @@
       </div>
     </footer>
     <!--footer end-->
+    <script>
+      function copyToClipboard(e) {
+        selectText(e);
+        document.execCommand("copy");
+      }
+
+      function selectText(e) {
+        e = document.getElementById(e);
+
+        if (document.body.createTextRange) {
+          const r = document.body.createTextRange();
+          r.moveToElementText(e);
+          r.select();
+        } else if (window.getSelection) {
+          const s = window.getSelection();
+          const r = document.createRange();
+          r.selectNodeContents(e);
+          s.removeAllRanges();
+          s.addRange(r);
+        } else {
+          console.warn(
+            "Could not select text in " + e + ": Unsupported browser."
+          );
+        }
+      }
+    </script>
   </body>
   </body>
 </html>

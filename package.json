@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "clipboard": "^2.0.11",
+    "clipboard-polyfill": "^4.0.0"
+  }
+}
