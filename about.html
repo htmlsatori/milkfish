@@ -17,20 +17,30 @@
         margin: 0px;
         font-family: "inter", sans-serif;
       }
-      .about {
-        padding: 3% 5%;
+      .about-wrapper {
+        height: 100vh;
+        display: flex;
+        padding: 0% 5%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
       }
+      @media (max-width: 950px) {
+        h1 span {
+          font-size: 4vw;
+          line-height: 4vw;
+        }
 
-      @media (max-width: 768px) {
-        .about {
-          height: 50vh;
+        .about-wrapper {
+          padding-right: 35;
         }
       }
 
       h1 {
         font-size: 4vw;
         cursor: cell;
-        text-align: justify;
+        text-align: left;
         line-height: 3.5vw;
       }
 
@@ -159,6 +169,22 @@
           padding-top: 0px;
         }
       }
+
+      .navi {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 50px;
+      }
+
+      .ww a {
+        text-decoration: none;
+        color: black;
+      }
+      .hh a {
+        text-decoration: none;
+        color: black;
+      }
     </style>
   </head>
 
@@ -177,43 +203,15 @@
           posting, not navigating tangled menus.
         </h1>
       </div>
-    </div>
-    <div class="nav">
-      <input type="checkbox" id="nav-check" />
-      <div class="nav-header">
-        <div class="nav-title">
-          <a href="index.html"><img src="/fish.gif" alt="" height="100px" /></a>
+      <div class="navi">
+        <div class="ww">
+          <a href="/"><h1>HOME</h1></a>
         </div>
-      </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-
-      <div class="nav-links">
-        <a href="/">HOME</a>
-        <a href="about">ABOUT</a>
-        <a href="work">WORK</a>
-        <a
-          ><div>
-            <button
-              id="copy"
-              data-clipboard-text="HELLO@MILKFISH.COM"
-              style="
-                background-color: white;
-                background-color: rgba(245, 222, 179, 0);
-                display: inline-block;
-                border-radius: 0px;
-                border: none !important;
-              "
-            >
-              CONTACT
-            </button>
-          </div></a
-        >
+        <div class="hh">
+          <a href="work">
+            <h1>WORK</h1>
+          </a>
+        </div>
       </div>
     </div>
     <script>
