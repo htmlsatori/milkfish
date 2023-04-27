@@ -1,117 +1,299 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>About</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    rel="stylesheet"
-  />
-  </head>
-  <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i id="bars" class="fa fa-bars" aria-hidden="true"></i>
-      </label>
-      <label class="logo">WEBSITE DESIGN & 3D CREATIVE STUDIO.</label>
-      <ul>
-        <li><a class="active" href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/work">Work</a></li>
-        <li><span style="border: 1px dotted gray; padding: 10px 10px">
-          <strong
-            style="
-              font-family: 'inter', sans-serif;
-              font-size: 0.8rem;
-              margin-right: 10px;
-              font-weight: 400;
-              text-transform: uppercase;
-            "
-            id="clipboard-text"
-            >hello@milkfish.com</strong
-          >
-          <button onclick="copyToClipboard('clipboard-text')">
-            <i class="fa fa-clipboard"></i>
-          </button></li>
-      </ul>
-    </nav>
-   <!--section about start -->
-   <div class="about">
-    <div class="right">
-      <p class="about-p">
-        I'm a solo creative living in Montreal, Quebec who loves interesting and beautiful things. <br> <br> A website needs to be both: interesting enough to make them come, and beautiful enough for them to stay a while. Inspired by visual art and design throughout history, I frequently incorporate original 3D art to help each project speak with its own distinct voice.
-        <br> <br> I create my websites from scratch using source code meaning that they are fast, reliable, and customizable. It also means that I can make you a simple and easy to use backend that feels posting, not navigating tangled menus.  <br /><br />
-      </p>
-    </div>
-    <div class="left"></div>
-  </div>
-
-
-    <!--hero end-->
-
-    <!--footer start-->
-    <footer>
-      <div class="footer">
-        <div class="row">
-          <div class="inner-foot">
-            <div class="foot">
-              <a href="https://www.figma.com/@milkfish" target="”_blank”"
-                >FIGMA</a
-              >
-            </div>
-            <div class="foot">
-              <a
-                href="https://www.instagram.com/milkfishstudio/"
-                target="”_blank”"
-                >INSTAGRAM</a
-              >
-            </div>
-            <div class="foot">
-              <a href="https://www.behance.net/milkfish" target="”_blank”"
-                >BEHANCE</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--footer end-->
-    <script>
-      function copyToClipboard(e) {
-        selectText(e);
-        document.execCommand("copy");
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+    <title>ABOUT</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+      * {
+        padding: 0px;
+        margin: 0px;
+        font-family: "inter", sans-serif;
+      }
+      .about {
+        padding: 3% 5%;
       }
 
-      function selectText(e) {
-        e = document.getElementById(e);
-
-        if (document.body.createTextRange) {
-          const r = document.body.createTextRange();
-          r.moveToElementText(e);
-          r.select();
-        } else if (window.getSelection) {
-          const s = window.getSelection();
-          const r = document.createRange();
-          r.selectNodeContents(e);
-          s.removeAllRanges();
-          s.addRange(r);
-        } else {
-          console.warn(
-            "Could not select text in " + e + ": Unsupported browser."
-          );
+      @media (max-width: 768px) {
+        .about {
+          height: 50vh;
         }
       }
+
+      h1 {
+        font-size: 4vw;
+        cursor: cell;
+        text-align: justify;
+        line-height: 3.5vw;
+      }
+
+      h1 span {
+        transition: color 3s;
+        transition-delay: 1s;
+        letter-spacing: -0.2vw;
+      }
+
+      h1 span:hover {
+        transition: color 0s;
+      }
+
+      h1 span:nth-child(1n):hover {
+        color: #fb62f6;
+      }
+
+      h1 span:nth-child(2n):hover {
+        color: #ff4242;
+      }
+
+      h1 span:nth-child(3n):hover {
+        color: #f2ff49;
+      }
+
+      /* Style the navigation bar */
+      .nav {
+        height: 80px;
+        position: relative;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0% 5%;
+      }
+
+      .nav img {
+        float: left;
+      }
+
+      .nav > .nav-header {
+        display: inline;
+      }
+
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #000000;
+        padding: 10px 10px 10px 10px;
+      }
+
+      .nav > .nav-btn {
+        display: none;
+      }
+
+      .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 15px;
+      }
+
+      button#copy {
+        font-size: 15px;
+      }
+
+      .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #000000;
+      }
+
+      .nav > #nav-check {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        .nav > .nav-btn {
+          display: inline-block;
+          position: absolute;
+          right: 0px;
+          top: 10px;
+        }
+
+        .nav > .nav-btn > label {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          padding: 13px;
+        }
+
+        .nav > .nav-btn > label > span {
+          display: block;
+          width: 25px;
+          height: 5px;
+          border-top: 2px solid #000000;
+        }
+        .nav > .nav-links {
+          position: absolute;
+          font-size: 4rem;
+          display: block;
+          width: 100%;
+          background-color: #ffffff;
+          height: 0px;
+          transition: all 0.3s ease-in;
+          overflow-y: hidden;
+          top: 50px;
+          left: 5%;
+        }
+        .nav > .nav-links > a {
+          display: block;
+          width: 100%;
+        }
+        .nav > #nav-check:not(:checked) ~ .nav-links {
+          height: 0px;
+        }
+        .nav > #nav-check:checked ~ .nav-links {
+          height: calc(100vh - 50px);
+          overflow-y: auto;
+          margin-top: 40px;
+        }
+        button#copy {
+          color: rgb(0, 0, 0) !important;
+          font-size: 4rem;
+          float: left;
+          padding-top: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="about-wrapper">
+      <div class="about">
+        <h1>
+          I'm a solo creative living in Montreal, Quebec who loves interesting
+          and beautiful things. A website needs to be both: interesting enough
+          to make them come, and beautiful enough for them to stay a while.
+          Inspired by visual art and design throughout history, I frequently
+          incorporate original 3D art to help each project speak with its own
+          distinct voice. I create my websites from scratch using source code
+          meaning that they are fast, reliable, and customizable. It also means
+          that I can make you a simple and easy to use backend that feels
+          posting, not navigating tangled menus.
+        </h1>
+      </div>
+    </div>
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="index.html"><img src="/fish.gif" alt="" height="100px" /></a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="work.html">WORK</a>
+        <a
+          ><div>
+            <button
+              id="copy"
+              data-clipboard-text="HELLO@MILKFISH.COM"
+              style="
+                background-color: white;
+                background-color: rgba(245, 222, 179, 0);
+                display: inline-block;
+                border-radius: 0px;
+                border: none !important;
+              "
+            >
+              CONTACT
+            </button>
+          </div></a
+        >
+      </div>
+    </div>
+    <script>
+      function _toArray(arr) {
+        return Array.isArray(arr) ? arr : Array.from(arr);
+      }
+
+      function makeSpans(selector) {
+        var _document$querySelect = document.querySelectorAll(selector);
+        var _document$querySelect2 = _toArray(_document$querySelect);
+        var elements = _document$querySelect2.slice(0);
+
+        return elements.map(function (element) {
+          var text = element.innerText.split("");
+          var spans = text
+            .map(function (letter) {
+              return "<span>" + letter + "</span>";
+            })
+            .join("");
+          return (element.innerHTML = spans);
+        });
+      }
+
+      makeSpans("h1");
     </script>
-  </body>
+    <script>
+      $(document).ready(function () {
+        // Add class to mailto link
+        // Needed to separate the disabling of the default action AND copy email to clipboard
+        $("a[href^=mailto]").addClass("mailto-link");
+
+        var mailto = $(".mailto-link");
+        var messageCopy = "Click to copy email address";
+        var messageSuccess = "Email address copied to clipboard";
+
+        mailto.append('<span class="mailto-message"></span>');
+        $(".mailto-message").append(messageCopy);
+
+        // Disable opening your email client. yuk.
+        $("a[href^=mailto]").click(function () {
+          return false;
+        });
+
+        // On click, get href and remove 'mailto:' from value
+        // Store email address in a variable.
+        mailto.click(function () {
+          var href = $(this).attr("href");
+          var email = href.replace("mailto:", "");
+          copyToClipboard(email);
+          $(".mailto-message").empty().append(messageSuccess);
+          setTimeout(function () {
+            $(".mailto-message").empty().append(messageCopy);
+          }, 2000);
+        });
+      });
+
+      // Grabbed this from Stack Overflow.
+      // Copies the email variable to clipboard
+      function copyToClipboard(text) {
+        var dummy = document.createElement("input");
+        document.body.appendChild(dummy);
+        dummy.setAttribute("value", text);
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+      }
+      // Toggle the menu icon and show/hide the navigation links
+      const menuIcon = document.querySelector(".menu-icon");
+      const navLinks = document.querySelectorAll(".navbar a");
+
+      menuIcon.addEventListener("click", () => {
+        document.body.classList.toggle("nav-open");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          document.body.classList.remove("nav-open");
+        });
+      });
+    </script>
+    <script src="app.js"></script>
   </body>
 </html>

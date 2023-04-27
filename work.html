@@ -1,210 +1,457 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Work</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+
+  <!-- Trigger -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>WORK</title>
+    <style>
+    
+    /* Style the navigation bar */
+    .nav {
+  height: 80px;
+  position: relative;
+  color: black;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 2%;
+}
+
+.nav img {
+    float: left;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #000000;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 15px;
+}
+
+button#copy {
+  font-size: 15px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+ 
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    border-top: 2px solid #000000;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    font-size: 4rem;
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    margin-top: 40px;
+  }
+  button#copy {
+    color: rgb(0, 0, 0) !important;
+    font-size: 4rem;
+   float: left;
+   padding-top: 0px;
+  }
+
+}
+  </style>
+    </style>
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i id="bars" class="fa fa-bars" aria-hidden="true"></i>
-      </label>
-      <label class="logo">WEBSITE DESIGN & 3D CREATIVE STUDIO.</label>
-      <ul>
-        <li><a class="active" href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/work.html">Work</a></li>
-        <li><span style="border: 1px dotted gray; padding: 10px 10px">
-          <strong
-            style="
-              font-family: 'inter', sans-serif;
-              font-size: 0.8rem;
-              margin-right: 10px;
-              font-weight: 400;
-              text-transform: uppercase;
-            "
-            id="clipboard-text"
-            >hello@milkfish.com</strong
-          >
-          <button onclick="copyToClipboard('clipboard-text')">
-            <i class="fa fa-clipboard"></i>
-          </button>
-        </span></li>
-      </ul>
-      </div>
-    </nav>
-   <!--section start -->
-   <div class="projectsbox">
-    <div class="grid">
-      <a class="p-box" href="/cold.html">
-        <div class="grid-item">
-          <div
-            class="title-box"
-            style="
-              background-color: #a0b3ba;
-              background-image: url(/assets/cold.svg);
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: 300px;
-            "
-          ></div>
-          <div class="title">DESIGN / DEVELOPMENT</div>
-          <div class="p-p">
-            Innovative and stylish products that are both functional and
-            aesthetically pleasing.
+       <!--nav start-->
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title"><a href="index.html"><img src="/fish.gif" alt="" height="100px"></a>
           </div>
         </div>
-      </a>
-      <a class="p-box" href="/harmonica.html">
-        <div class="grid-item">
-          <div
-            class="title-box"
-            style="
-              background-color: #feb700;
-              background-image: url(/assets/harmonica.png);
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: 300px;
-            "
-          ></div>
-          <div class="title">DESIGN / DEVELOPMENT</div>
-          <div class="p-p">
-            Authentic Italian cuisine, using only the freshest and highest
-            quality ingredients.
-          </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
         </div>
-      </a>
-      <a class="p-box" href="/rewind.html">
-        <div class="grid-item">
-          <div
-            class="title-box"
-            style="
-              background-color: rgb(255, 255, 255);
-              background-image: url(/assets/rewind.png);
-              -webkit-filter: invert(100%);
-              filter: invert(100%);
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: 300px;
-            "
-          ></div>
-          <div class="title">DESIGN / DEVELOPMENT</div>
-          <div class="p-p">
-            Sustainability through creating fashionable and functional
-            clothing for kids.
-          </div>
-        </div>
-      </a>
-      <a class="p-box" href="/glimmer.html">
-        <div class="grid-item">
-          <div
-            class="title-box"
-            style="
-              background-color: rgb(255, 255, 255);
-              background-image: url(/assets/glimmer.png);
-              -webkit-filter: invert(100%);
-              filter: invert(100%);
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: 300px;
-            "
-          ></div>
-          <div class="title">DESIGN / DEVELOPMENT</div>
-          <div class="p-p">
-            Exceptional musicianship and creative approach to performance.
-          </div>
-        </div>
-      </a>
-      <a class="p-box" href="/sasha.html">
-        <div class="grid-item">
-          <div
-            class="title-box"
-            style="
-              background-color: white;
-              border: black solid 1px;
-              background-image: url(/assets/sasha.png);
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: 300px;
-            "
-          ></div>
-          <div class="title">DESIGN / DEVELOPMENT</div>
-          <div class="p-p">
-            A photography studio specializing in portrait and event
-            photography.
-          </div>
-        </div>
-      </a>
+        
+        <div class="nav-links">
+          <a href="/index.html" >HOME</a>
+          <a href="/about.html">ABOUT</a>
+          <a href="work.html" >WORK</a>
+          <a><div>
+            <button
+              id="copy"
+              data-clipboard-text="HELLO@MILKFISH.COM "
+              style="background-color: white; background-color: rgba(245, 222, 179, 0); display: inline-block;
+             border-radius: 0px; border:none !important; "
+            >
+              CONTACT
+            </button>
+          </div></a>
+    
 
-      <!-- Add more grid items as needed -->
-    </div>
-  </div>
-
-  <!--section end -->
-
-    <!--footer start-->
-    <footer>
-      <div class="footer">
-        <div class="row">
-          <div class="inner-foot">
-            <div class="foot">
-              <a href="https://www.figma.com/@milkfish" target="”_blank”"
-                >FIGMA</a
-              >
-            </div>
-            <div class="foot">
-              <a
-                href="https://www.instagram.com/milkfishstudio/"
-                target="”_blank”"
-                >INSTAGRAM</a
-              >
-            </div>
-            <div class="foot">
-              <a href="https://www.behance.net/milkfish" target="”_blank”"
-                >BEHANCE</a
-              >
-            </div>
-          </div>
         </div>
       </div>
-    </footer>
-    <!--footer end-->
+    <!--nav end-->
+    <ul class="menu accordian" id="accord1">
+      <div class="work-list">
+      <!--cold start
+        <li>
+          <div class="brand">
+            <header><a href="#">ELECTRIC AIR </a></header>
+            <p>DESIGN / DEVELOPMENT</p>
+            <section>
+      <p style="max-width: 600px;" class="subtext">We have completely revamped the website with a minimial and clean look and improved functionality, making it easier for users to browse and purchase high-quality kitchen accessories</p>
+      <div className="App">
+        <Carousel>
+          <div className="image-slide">
+            <img
+              src="https://images.unsplash.com/photo-1516692935701-4f35bff8b9f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e8b07db9ad1b8626288bbbf77471558&auto=format&fit=crop&w=1950&q=80"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+              src="https://images.unsplash.com/photo-1533435678437-116975b59869?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=504ebc0ae846a334de634e5bdfce8f2a&auto=format&fit=crop&w=1000&q=80"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+              src="https://images.unsplash.com/photo-1533428558425-bd61ad510c19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d19eef10401ec87e7514f08f66f6a2a&auto=format&fit=crop&w=1900&q=80"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+              src="https://images.unsplash.com/photo-1533414417583-f0ab99151186?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9d51581db2684ded44ce707c3b86fc5c&auto=format&fit=crop&w=1950&q=80"
+              alt="random photo"
+            />
+          </div>
+    </section>
+          </div>
+          <div class="title">2023</div>
+        </li>
+        -->
+        <!--cold end-->
+        <!--air start-->
+        <li>
+          <div class="brand">
+            <header><a href="#">COLD EMPORIUNM</a></header>
+            <p>DESIGN / DEVELOPMENT</p>
+            <section>
+      <p style="max-width: 600px;" class="subtext">We have completely revamped the website with a minimial and clean look and improved functionality, making it easier for users to browse and purchase high-quality kitchen accessories</p>
+      <div className="App">
+        <Carousel>
+          
+          <div className="image-slide">
+            <img
+              src="/assets/cold/1.png"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/cold/2.png"              
+            alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/cold/3.jpeg"             
+             alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/cold/4.png"              
+            alt="random photo"
+            />
+          </div>
+    </section>
+          </div>
+          <div class="title">2023</div>
+        </li>
+        <!--air end-->
+         <!--air start-->
+         <li>
+          <div class="brand">
+            <header><a href="#">REWIND PROJECT</a></header>
+            <p>DESIGN / DEVELOPMENT</p>
+            <section>
+      <p style="max-width: 600px;" class="subtext">
+        Rewind is the go-to destination for stylish, comfortable and sustainable children's apparel. <br><br>
+        
+        We took their brand to the next level and helped reach even more families who share our passion for fashion and sustainability.</p>
+      <div className="App">
+        <Carousel>
+          <div className="image-slide">
+            <img
+              src="/assets/rewind/1.png"              
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/rewind/2.png"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+              src="/assets/rewind/3.png"
+              alt="random photo"
+            />
+          </div>
+    </section>
+          </div>
+          <div class="title">2022</div>
+        </li>
+        <!--air end-->
+         <!--air start-->
+         <li>
+          <div class="brand">
+            <header><a href="#">HARMONICA</a></header>
+            <p>DESIGN / DEVELOPMENT</p>
+            <section>
+      <p style="max-width: 600px;" class="subtext">The website rebrand showcases an immersive dining experience through stunning photography, so you can visualize the beauty and atmosphere of our restaurant before you even step through our doors.</p>
+      <div className="App">
+        <Carousel>
+          <div className="image-slide">
+            <img
+              src="/assets/harmonica/1.png"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/harmonica/2.png"              
+            alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/harmonica/3.png"              
+            alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/harmonica/4.jpeg"             
+             alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/harmonica/5.png"             
+             alt="random photo"
+            />
+          </div>
+    </section>
+          </div>
+          <div class="title">2022</div>
+        </li>
+        <!--air end-->
+         <!--air start-->
+         <li>
+          <div class="brand">
+            <header><a href="#">GLIMMER</a></header>
+            <p>DESIGN / DEVELOPMENT</p>
+            <section>
+      <p style="max-width: 600px;" class="subtext">Our vision for the website is to create a user-friendly, visually stunning platform that showcases the orchestra's talents and performances. <br><br>
+
+        We want visitors to be able to easily navigate the site and find information on upcoming events, ticket sales, and our history and mission.</p>
+      <div className="App">
+        <Carousel>
+      
+          <div className="image-slide">
+            <img
+            src="/assets/glimmer/2.png"              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/glimmer/3.png"              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/glimmer/4.png"              alt="random photo"
+            />
+          </div>
+    </section>
+          </div>
+          <div class="title">2022</div>
+        </li>
+        <!--air end-->
+         <!--air start-->
+         <li>
+          <div class="brand">
+            <header><a href="#">SASHA'S EYES</a></header>
+            <p>DESIGN / DEVELOPMENT</p>
+            <section>
+      <p style="max-width: 600px;" class="subtext">The goal of the website was to showcase the studio's work and services, provide information to potential clients, and make it easy for clients to book appointments. <br><br>
+
+        The website was built using Adobe XD & Webflow, and was optimized for desktop and mobile devices.s</p>
+      <div className="App">
+        <Carousel>
+          <div className="image-slide">
+            <img
+            src="/assets/sasha/1.png"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/sasha/2.png"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/sasha/3.png"
+              alt="random photo"
+            />
+          </div>
+          <div className="image-slide">
+            <img
+            src="/assets/sasha/4.png"
+              alt="random photo"
+            />
+          </div>
+    </section>
+          </div>
+          <div class="title">2021</div>
+        </li>
+        <!--air end-->
+      
+       
+        </li>
+
+        <li class="bg"></li>
+        <a href="" class="txt"></a>
+      </div>
+    </ul>
     <script>
-      function copyToClipboard(e) {
-        selectText(e);
-        document.execCommand("copy");
-      }
+        $(document).ready(function() {
+	
+	// Add class to mailto link
+	// Needed to separate the disabling of the default action AND copy email to clipboard
+	$('a[href^=mailto]').addClass('mailto-link');
 
-      function selectText(e) {
-        e = document.getElementById(e);
+	var mailto = $('.mailto-link');
+	var messageCopy = 'Click to copy email address';
+	var messageSuccess = 'Email address copied to clipboard';
+	
+	mailto.append('<span class="mailto-message"></span>');
+	$('.mailto-message').append(messageCopy);
+	
+	// Disable opening your email client. yuk.
+	$('a[href^=mailto]').click(function() {
+		return false; 
+	})
+	
+	// On click, get href and remove 'mailto:' from value
+	// Store email address in a variable.
+	mailto.click(function() {
+		var href = $(this).attr('href');
+		var email = href.replace('mailto:', '');
+		copyToClipboard(email);
+		$('.mailto-message').empty().append(messageSuccess);
+		setTimeout(function() {
+			$('.mailto-message').empty().append(messageCopy);}, 2000); 
+	});
+	
+});
 
-        if (document.body.createTextRange) {
-          const r = document.body.createTextRange();
-          r.moveToElementText(e);
-          r.select();
-        } else if (window.getSelection) {
-          const s = window.getSelection();
-          const r = document.createRange();
-          r.selectNodeContents(e);
-          s.removeAllRanges();
-          s.addRange(r);
-        } else {
-          console.warn(
-            "Could not select text in " + e + ": Unsupported browser."
-          );
-        }
-      }
-    </script>
-  </body>
+// Grabbed this from Stack Overflow.
+// Copies the email variable to clipboard
+function copyToClipboard(text) {
+    var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    dummy.setAttribute('value', text);
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+}
+        // Toggle the menu icon and show/hide the navigation links
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelectorAll('.navbar a');
+        
+        menuIcon.addEventListener('click', () => {
+          document.body.classList.toggle('nav-open');
+        });
+        
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            document.body.classList.remove('nav-open');
+          });
+        });
+
+      </script>
+      <script src="app.js"></script>
   </body>
 </html>
