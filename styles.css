@@ -414,6 +414,8 @@ button {
   background-image: url("/assets/milkfish.svg")
   
 }
+
+
 #dvd:before {
   font-style: normal;
   font-weight: normal;
@@ -428,4 +430,13 @@ button {
   display: none;
 }
 
+
+@media (max-width: 470px) {
+  #dvd {
+    position: absolute;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 60%;
+  }
+}
 
