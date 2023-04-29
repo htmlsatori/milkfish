@@ -367,9 +367,9 @@ img {
   padding-left: 10px;
   padding-top: 10px;
 }
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .hero {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 .copy-notification {
