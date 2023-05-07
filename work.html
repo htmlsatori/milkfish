@@ -11,6 +11,7 @@
 
   <!-- Trigger -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="test.css">
     <title>WORK</title>
     <style>
     
@@ -117,7 +118,23 @@ button#copy {
    padding-top: 0px;
   }
 
+  .link-btn {
+    border: .5px solid black; 
+    padding: 10px 25px;
+  
+  }
+
+  .link-btn:hover {
+    background-color: red;
+  }
+
+  .live {
+    background-color: red;
+  }
+
 }
+
+
   </style>
     </style>
   </head>
@@ -126,7 +143,7 @@ button#copy {
     <div class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
-          <div class="nav-title"><a href="index.html"><img style="width: 8%;" src="/fish.gif" alt=""></a>
+          <div class="nav-title"><a href="index.html"><img style="width: 8%;" loading="eager" src="/fish.gif" alt=""></a>
           </div>
         </div>
         <div class="nav-btn">
@@ -204,34 +221,28 @@ button#copy {
             <p>DESIGN / DEVELOPMENT</p>
             <section>
       <p style="max-width: 600px;" class="subtext">We have completely revamped the website with a minimial and clean look and improved functionality, making it easier for users to browse and purchase high-quality kitchen accessories</p>
+      <button class="live"><span class="link-btn"><a style="font-size: 1rem; font-weight: 500;" href="https://coldsite.webflow.io/" target="_blank">live preview</a></span></button>
       <div className="App">
-        <Carousel>
-          
-          <div className="image-slide">
-            <img
-              src="/assets/cold/1.png"
-              alt="random photo"
-            />
+        <logo-slider>
+          <div>
+            <img src="/assets/project images/c1.png" />
+            <img src="/assets/project images/c2.png" />
+            <img src="assets/project images/c3.png" />
+            <img src="/assets/project images/c4.png" />
+            <img src="/assets/project images/c5.png" />
+            <img src="/assets/project images/c6.png" />
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/cold/2.png"              
-            alt="random photo"
-            />
+    
+          <div>
+            <img src="/assets/project images/c1.png" />
+            <img src="/assets/project images/c2.png" />
+            <img src="assets/project images/c3.png" />
+            <img src="/assets/project images/c4.png" />
+            <img src="/assets/project images/c5.png" />
+            <img src="/assets/project images/c6.png" />
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/cold/3.jpeg"             
-             alt="random photo"
-            />
-          </div>
-          <div className="image-slide">
-            <img
-            src="/assets/cold/4.png"              
-            alt="random photo"
-            />
-          </div>
-    </section>
+        </logo-slider>
+           </section>
           </div>
           <div class="title">2023</div>
         </li>
@@ -239,33 +250,26 @@ button#copy {
          <!--air start-->
          <li>
           <div class="brand">
-            <header><a href="#">REWIND PROJECT</a></header>
+            <header><a href="#">ELECTRIC AIR</a></header>
             <p>DESIGN / DEVELOPMENT</p>
             <section>
       <p style="max-width: 600px;" class="subtext">
         Rewind is the go-to destination for stylish, comfortable and sustainable children's apparel. <br><br>
         
         We took their brand to the next level and helped reach even more families who share our passion for fashion and sustainability.</p>
-      <div className="App">
-        <Carousel>
-          <div className="image-slide">
-            <img
-              src="/assets/rewind/1.png"              
-              alt="random photo"
-            />
+        <button class="live"><span class="link-btn"><a style="font-size: 1rem; font-weight: 500; color:#00000067" href=""> <strike>In Production</strike> </a></span></button>
+
+        <div className="App">
+        <logo-slider>
+          <div>
+            <img src="/fish.gif" style="object-fit: cover; transform: scaleX(-1);"/>
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/rewind/2.png"
-              alt="random photo"
-            />
+    
+          <div>
+            <img src="/fish.gif" style="object-fit: cover; transform: scaleX(-1);"/>
+       
           </div>
-          <div className="image-slide">
-            <img
-              src="/assets/rewind/3.png"
-              alt="random photo"
-            />
-          </div>
+        </logo-slider>
     </section>
           </div>
           <div class="title">2022</div>
@@ -278,38 +282,30 @@ button#copy {
             <p>DESIGN / DEVELOPMENT</p>
             <section>
       <p style="max-width: 600px;" class="subtext">The website rebrand showcases an immersive dining experience through stunning photography, so you can visualize the beauty and atmosphere of our restaurant before you even step through our doors.</p>
+      <button class="live"><span class="link-btn"><a style="font-size: 1rem; font-weight: 500;" href="https://harmonicaweb.webflow.io/" target="_blank">live preview</a></span></button>
+
       <div className="App">
-        <Carousel>
-          <div className="image-slide">
-            <img
-              src="/assets/harmonica/1.png"
-              alt="random photo"
-            />
+        <logo-slider>
+          <div>
+            <img src="/assets/project images/h1.png" />
+            <img src="/assets/project images/h2.png" />
+            <img src="/assets/project images/h3.png" />
+            <img src="/assets/project images/h4.png" />
+            <img src="/assets/project images/h6.png" />
+            <img src="/assets/project images/h7.png" />
+           
+    
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/harmonica/2.png"              
-            alt="random photo"
-            />
+    
+          <div>
+            <img src="/assets/project images/h1.png" />
+            <img src="/assets/project images/h2.png" />
+            <img src="/assets/project images/h3.png" />
+            <img src="/assets/project images/h4.png" />
+            <img src="/assets/project images/h6.png" />
+            <img src="/assets/project images/h7.png" />
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/harmonica/3.png"              
-            alt="random photo"
-            />
-          </div>
-          <div className="image-slide">
-            <img
-            src="/assets/harmonica/4.jpeg"             
-             alt="random photo"
-            />
-          </div>
-          <div className="image-slide">
-            <img
-            src="/assets/harmonica/5.png"             
-             alt="random photo"
-            />
-          </div>
+        </logo-slider>
     </section>
           </div>
           <div class="title">2022</div>
@@ -317,6 +313,7 @@ button#copy {
         <!--air end-->
          <!--air start-->
          <li>
+          <!--
           <div class="brand">
             <header><a href="#">GLIMMER</a></header>
             <p>DESIGN / DEVELOPMENT</p>
@@ -325,30 +322,37 @@ button#copy {
 
         We want visitors to be able to easily navigate the site and find information on upcoming events, ticket sales, and our history and mission.</p>
       <div className="App">
-        <Carousel>
-      
-          <div className="image-slide">
-            <img
-            src="/assets/glimmer/2.png"              alt="random photo"
-            />
+        <logo-slider>
+          <div>
+            <img src="https://picsum.photos/100" />
+            <img src="https://picsum.photos/102" />
+            <img src="https://picsum.photos/103" />
+            <img src="https://picsum.photos/104" />
+            <img src="https://picsum.photos/105" />
+            <img src="https://picsum.photos/106" />
+            <img src="https://picsum.photos/107" />
+            <img src="https://picsum.photos/108" />
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/glimmer/3.png"              alt="random photo"
-            />
+    
+          <div>
+            <img src="https://picsum.photos/100" />
+            <img src="https://picsum.photos/102" />
+            <img src="https://picsum.photos/103" />
+            <img src="https://picsum.photos/104" />
+            <img src="https://picsum.photos/105" />
+            <img src="https://picsum.photos/106" />
+            <img src="https://picsum.photos/107" />
+            <img src="https://picsum.photos/108" />
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/glimmer/4.png"              alt="random photo"
-            />
-          </div>
+        </logo-slider>
     </section>
           </div>
           <div class="title">2022</div>
         </li>
-        <!--air end-->
-         <!--air start-->
+   
+
          <li>
+        -->
           <div class="brand">
             <header><a href="#">SASHA'S EYES</a></header>
             <p>DESIGN / DEVELOPMENT</p>
@@ -356,32 +360,29 @@ button#copy {
       <p style="max-width: 600px;" class="subtext">The goal of the website was to showcase the studio's work and services, provide information to potential clients, and make it easy for clients to book appointments. <br><br>
 
         The website was built using Adobe XD & Webflow, and was optimized for desktop and mobile devices.s</p>
+        <button class="live"><span class="link-btn"><a style="font-size: 1rem; font-weight: 500;" href="https://sashaseyes.webflow.io/" target="_blank">live preview</a></span></button>
+
       <div className="App">
-        <Carousel>
-          <div className="image-slide">
-            <img
-            src="/assets/sasha/1.png"
-              alt="random photo"
-            />
+        <logo-slider>
+          <div>
+            <img src="/assets/project images/s1.png" />
+            <img src="/assets/project images/s2.png" />
+            <img src="/assets/project images/s3.png" />
+            <img src="/assets/project images/s4.png" />
+            <img src="/assets/project images/s5.png" />
+            <img src="/assets/project images/s6.png" />
+        
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/sasha/2.png"
-              alt="random photo"
-            />
+    
+          <div>
+            <img src="/assets/project images/s1.png" />
+            <img src="/assets/project images/s2.png" />
+            <img src="/assets/project images/s3.png" />
+            <img src="/assets/project images/s4.png" />
+            <img src="/assets/project images/s5.png" />
+            <img src="/assets/project images/s6.png" />
           </div>
-          <div className="image-slide">
-            <img
-            src="/assets/sasha/3.png"
-              alt="random photo"
-            />
-          </div>
-          <div className="image-slide">
-            <img
-            src="/assets/sasha/4.png"
-              alt="random photo"
-            />
-          </div>
+        </logo-slider>
     </section>
           </div>
           <div class="title">2021</div>
