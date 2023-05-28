@@ -4,270 +4,618 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css" />
     <title>MILKFISH</title>
   </head>
   <body>
-    <div id="dvd"></div>
-    <div class="hero">
-      DIGITIAL CREATIVE STUDIO<br />
-      IN MONTREAL,QC
+    <div class="nav-bar">
+      <div class="brand">
+        <div class="logo">
+          <p>
+            MILKFISH IS A DESIGN AGENCY THAT SPECIALIZES IN BRAND MESSAGING,
+            VISUAL IDENTITY AND DIGITAL EXPERIENCES.
+            <span class="blink">_</span>
+          </p>
+        </div>
+      </div>
+      <div class="btn-wrap">
+        <button class="open-menu active">[Info]</button>
+        <button class="close-menu">[Close]</button>
+      </div>
     </div>
-    <!--footer start-->
-    <footer>
-      <div class="footer">
-        <div class="row">
-          <div class="inner-foot">
-            <div class="foot">
-              <a href="about">ABOUT</a>
+    <menu>
+      <div class="contact">
+        <div class="subtext">
+          <p>To discuss a potential project please get in touch.</p>
+        </div>
+        <div class="contact-btn"><p>info@milkfish.ca</p></div>
+      </div>
+      <div class="services">
+        <div class="subtext">Services</div>
+        <ul>
+          <li>website design</li>
+          <li>website developement</li>
+          <li>brand identity</li>
+          <li>art direction</li>
+          <li>site maintence</li>
+        </ul>
+      </div>
+    </menu>
+    <div class="wrapper">
+      <div class="sphere">
+        <div class="green"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="cyan1"></div>
+        <div class="cyan2"></div>
+        <div class="yellow1"></div>
+        <div class="yellow2"></div>
+        <div class="magenta1"></div>
+        <div class="magenta2"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="big-logo">
+        <img src="/assets/milkf2.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="one" onclick=" showMarquee()" onmouseout="hideMarquee()">
+          <div class="date1">2023 mar</div>
+          <div class="work1">electric air</div>
+          <div class="dd1">development</div>
+          <div class="industry1">portfolio</div>
+          <div class="btn1">
+            <a href="https://coldsite.webflow.io/" target="_blank"
+              >open website</a
+            >
+          </div>
+          <div id="myMarquee" class="marquee">
+            <div class="marquee-content">
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=07"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/cold/3.jpeg" style="filter: none" alt="" />
+              </div>
             </div>
-            <div class="foot">
-              <a href="work">WORK</a>
+          </div>
+        </div>
+        <div class="two" onclick="showMarquee2()" onmouseout="hideMarquee2()">
+          <div class="date2">2023 apr</div>
+          <div class="work2">cold emporium</div>
+          <div class="dd2">design / development</div>
+          <div class="industry2">e-commerce</div>
+          <div class="btn2"><a href="">open website</a></div>
+          <div id="myMarquee2" class="marquee">
+            <div class="marquee-content">
+              <div class="marquee-item">
+                <img
+                  src="/assets/project images/c1.png"
+                  style="filter: none"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="/assets/project images/c2.png"
+                  style="filter: none"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="/assets/project images/c2.png"
+                  style="filter: none"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="/assets/project images/c4.png"
+                  style="filter: none"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="/assets/project images/c5.png"
+                  style="filter: none"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c6.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c1.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c2.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c3.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c4.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c5.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c6.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c1.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c2.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c3.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/c4.png" alt="" />
+              </div>
             </div>
-            <div class="foot">
-              <span style="padding: 10px 10px">
-                <strong
-                  style="
-                    font-family: 'inter', sans-serif;
-                    font-size: 0.8rem;
-                    margin-right: 10px;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                  "
-                  id="clipboard-text"
-                  >satorijal@gmail.com</strong
-                >
-                <button onclick="copyToClipboard('clipboard-text')">
-                  <i class="fa fa-clipboard"></i>
-                </button>
-              </span>
+          </div>
+        </div>
+        <div
+          class="three"
+          onclick=" showMarquee3()"
+          onmouseout="hideMarquee3()"
+        >
+          <div class="date3">2023 feb</div>
+          <div class="work3">rewind project</div>
+          <div class="dd3">design / development</div>
+          <div class="industry3">e-commerce</div>
+          <div class="btn3"><a href="">open website</a></div>
+          <div id="myMarquee3" class="marquee">
+            <div class="marquee-content">
+              <div class="marquee-item">
+                <img src="/assets/glimmer.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/rewind.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=03"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=04"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=05"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=06"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=07"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=08"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=01"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=02"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=03"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=04"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=05"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=06"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=07"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=08"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="four" onclick=" showMarquee4()" onmouseout="hideMarquee4()">
+          <div class="date4">2022 dec</div>
+          <div class="work4">harmonica</div>
+          <div class="dd4">design / development</div>
+          <div class="industry4">resturant</div>
+          <div class="btn4">
+            <a href="https://harmonicaweb.webflow.io/" target="_blank"
+              >open website</a
+            >
+          </div>
+          <div id="myMarquee4" class="marquee">
+            <div class="marquee-content">
+              <div class="marquee-item">
+                <img src="/assets/project images/h1.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h2.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h3.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h4.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h6.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h7.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h8.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h1.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h2.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h3.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h4.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h6.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h7.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/h8.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="five" onclick=" showMarquee5()" onmouseout="hideMarquee5()">
+          <div class="date5">2022 nov</div>
+          <div class="work5">glimmer</div>
+          <div class="dd5">design / development</div>
+          <div class="industry5">charity</div>
+          <div class="btn5"><a href="">open website</a></div>
+          <div id="myMarquee5" class="marquee">
+            <div class="marquee-content">
+              <div class="marquee-item">
+                <img src="/assets/glimmer.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/rewind.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=03"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=04"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=05"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=06"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=07"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=08"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=01"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=02"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=03"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=04"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=05"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=06"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=07"
+                  alt=""
+                />
+              </div>
+
+              <div class="marquee-item">
+                <img
+                  src="https://via.placeholder.com/600/000000/FFFFFF/?text=08"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="six" onclick=" showMarquee6()" onmouseout="hideMarquee6()">
+          <div class="date6">2022 oct</div>
+          <div class="work6">sasha's eyes</div>
+          <div class="dd6">design / development</div>
+          <div class="industry6">portfolio</div>
+          <div class="btn6">
+            <a href="https://sashaseyes.webflow.io/" target="_blank"
+              >open website</a
+            >
+          </div>
+          <div id="myMarquee6" class="marquee">
+            <div class="marquee-content">
+         
+              <div class="marquee-item">
+                <img src="/assets/project images/s1.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s2.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s3.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s4.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s5.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s6.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s1.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s2.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s3.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s4.png" alt="" />
+              </div>
+
+              <div class="marquee-item">
+                <img src="/assets/project images/s5.png" alt="" />
+              </div>
+
+           
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+    <div class="footer">
+      <div class="socials">
+        <a href="https://www.instagram.com/milkfishstudio/" target="_blank"
+          >[Instagram]</a
+        >
+      </div>
+      <div class="d-mode">
+        <input onclick="myFunction()" type="checkbox" id="switch" />
+        <label for="switch" />
+      </div>
+      <div class="copyright"><a href="#">[All Rights Reserved]</a></div>
+    </div>
     <script src="app.js"></script>
-    <script>
-      function copyToClipboard(e) {
-        selectText(e);
-        document.execCommand("copy");
-      }
-
-      function selectText(e) {
-        e = document.getElementById(e);
-
-        if (document.body.createTextRange) {
-          const r = document.body.createTextRange();
-          r.moveToElementText(e);
-          r.select();
-        } else if (window.getSelection) {
-          const s = window.getSelection();
-          const r = document.createRange();
-          r.selectNodeContents(e);
-          s.removeAllRanges();
-          s.addRange(r);
-        } else {
-          console.warn(
-            "Could not select text in " + e + ": Unsupported browser."
-          );
-        }
-      }
-    </script>
-    <script>
-      var box = document.getElementById("dvd"),
-        colors = [
-          "#ffffff",
-          "#ff4000",
-          "#ff8000",
-          "#ffbf00",
-          "#ffff00",
-          "#bfff00",
-          "#80ff00",
-          "#40ff00",
-          "#00ff00",
-          "#00ff40",
-          "#00ff80",
-          "#00ffbf",
-          "#00ffff",
-          "#00bfff",
-          "#0080ff",
-          "#0040ff",
-          "#0000ff",
-          "#4000ff",
-          "#8000ff",
-          "#bf00ff",
-          "#ff00ff",
-          "#ff00bf",
-          "#ff0080",
-          "#ff0040",
-          "#ff0000",
-        ],
-        currentColor = Math.floor(Math.random() * 25 + 1),
-        win = window,
-        ww = win.innerWidth,
-        wh = win.innerHeight,
-        translateX = Math.floor(Math.random() * ww + 1),
-        translateY = Math.floor(Math.random() * wh + 1),
-        boxWidth = box.offsetWidth,
-        boxHeight = box.offsetHeight,
-        boxTop = box.offsetTop,
-        boxLeft = box.offsetLeft,
-        xMin = -boxLeft,
-        yMin = -boxTop,
-        xMax = win.innerWidth - boxLeft - boxWidth,
-        yMax = win.innerHeight - boxTop - boxHeight,
-        request = null,
-        direction = "se",
-        speed = 4,
-        timeout = null;
-
-      init();
-
-      // reset constraints on resize
-      window.addEventListener(
-        "resize",
-        function (argument) {
-          clearTimeout(timeout);
-          timeout = setTimeout(update, 100);
-        },
-        false
-      );
-
-      function init() {
-        request = requestAnimationFrame(init);
-        move();
-        // setInterval(function() {
-        //   move();
-        // }, 16.66);
-      }
-
-      // reset constraints
-      function update() {
-        xMin = -boxLeft;
-        yMin = -boxTop;
-        xMax = win.innerWidth - boxLeft - boxWidth;
-        yMax = win.innerHeight - boxTop - boxHeight;
-      }
-
-      function move() {
-        setDirection();
-        setStyle(box, {
-          transform:
-            "translate3d(" + translateX + "px, " + translateY + "px, 0)",
-        });
-      }
-
-      function setDirection() {
-        switch (direction) {
-          case "ne":
-            translateX += speed;
-            translateY -= speed;
-            break;
-          case "nw":
-            translateX -= speed;
-            translateY -= speed;
-            break;
-          case "se":
-            translateX += speed;
-            translateY += speed;
-            break;
-          case "sw":
-            translateX -= speed;
-            translateY += speed;
-            break;
-        }
-        setLimits();
-      }
-
-      function setLimits() {
-        if (translateY <= yMin) {
-          if (direction == "nw") {
-            direction = "sw";
-          } else if (direction == "ne") {
-            direction = "se";
-          }
-          switchColor();
-        }
-        if (translateY >= yMax) {
-          if (direction == "se") {
-            direction = "ne";
-          } else if (direction == "sw") {
-            direction = "nw";
-          }
-          switchColor();
-        }
-        if (translateX <= xMin) {
-          if (direction == "nw") {
-            direction = "ne";
-          } else if (direction == "sw") {
-            direction = "se";
-          }
-          switchColor();
-        }
-        if (translateX >= xMax) {
-          if (direction == "ne") {
-            direction = "nw";
-          } else if (direction == "se") {
-            direction = "sw";
-          }
-          switchColor();
-        }
-      }
-
-      function switchColor() {
-        var color = Math.floor(Math.random() * 25 + 1);
-
-        while (color == currentColor) {
-          color = Math.floor(Math.random() * 25 + 1);
-        }
-
-        setStyle(box, {
-          color: colors[color],
-        });
-
-        currentColor = color;
-      }
-
-      function getVendor() {
-        var ua = navigator.userAgent.toLowerCase(),
-          match =
-            /opera/.exec(ua) ||
-            /msie/.exec(ua) ||
-            /firefox/.exec(ua) ||
-            /(chrome|safari)/.exec(ua) ||
-            /trident/.exec(ua),
-          vendors = {
-            opera: "-o-",
-            chrome: "-webkit-",
-            safari: "-webkit-",
-            firefox: "-moz-",
-            trident: "-ms-",
-            msie: "-ms-",
-          };
-
-        return vendors[match[0]];
-      }
-
-      function setStyle(element, properties) {
-        var prefix = getVendor(),
-          property,
-          css = "";
-        for (property in properties) {
-          css += property + ": " + properties[property] + ";";
-          css += prefix + property + ": " + properties[property] + ";";
-        }
-        element.style.cssText += css;
-      }
-    </script>
   </body>
 </html>
