@@ -1037,3 +1037,105 @@ body.dark-mode .marquee-item {
     height: 42%;
   }
 }
+/* Credits: codepen.io/cbracco/pen/qzukg */
+
+/**
+ * Tooltip Styles
+ * 
+ * (Tooltip is named poptip to avoid naming
+ * conflicts with Bootstrap Framework)
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-poptip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-poptip]:before,
+[data-poptip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-poptip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -50px;
+  padding: 7px;
+  width: 80px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-poptip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-poptip]:after {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-poptip]:focus:before,
+[data-poptip]:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+
+  /* Trigger animation after two seconds */
+  -moz-animation: hideAnimation 0.2s ease-in 2s forwards;
+  -webkit-animation: hideAnimation 0.2s ease-in 2s forwards;
+  -o-animation: hideAnimation 0.2s ease-in 2s forwards;
+  animation: hideAnimation 0.2s ease-in 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* Hide animation */
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    overflow: hidden;
+    border: none;
+  }
+}
+@-webkit-keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    overflow: hidden;
+    border: none;
+  }
+}
+
+#copyBtn {
+  transition: none;
+}
+
+.btn-div {
+  position: fixed;
+}

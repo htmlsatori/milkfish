@@ -55,3 +55,13 @@ function showMarquee6() {
 function hideMarquee6() {
   document.getElementById("myMarquee6").style.display = "none";
 }
+document.getElementById("copyBtn").addEventListener("click", function () {
+  var copyText = this.dataset.copytext;
+  var inp = document.createElement("input");
+  document.body.appendChild(inp);
+  inp.value = copyText;
+  inp.select();
+  document.execCommand("copy", false);
+  inp.remove();
+  this.focus();
+});
