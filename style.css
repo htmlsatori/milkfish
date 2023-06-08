@@ -159,7 +159,7 @@ menu.open > li span {
 }
 
 .footer div {
-  padding: 0px 25px;
+  padding: 0px 10px;
 }
 .footer a {
   color: #1d1d1d;
@@ -267,7 +267,7 @@ li {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 /* hide scrollbar but allow scrolling */
 .container {
@@ -309,7 +309,7 @@ img {
   overflow-y: scroll;
   padding: 2% 0%;
   height: 50%;
-  z-index: 2;
+  z-index: 1 !important;
   background-color: inherit;
 }
 
@@ -558,6 +558,11 @@ div::-webkit-scrollbar {
     letter-spacing: 0.02em;
     vertical-align: top;
     margin-bottom: 0;
+    z-index: 1;
+  }
+
+  .marquee {
+    z-index: -1 !important;
   }
 
   .open {
