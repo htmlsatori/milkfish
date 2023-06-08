@@ -196,6 +196,16 @@ p {
   margin-bottom: 0;
 }
 
+@media (max-width: 435px) {
+  .footer div {
+    padding: 0px 10px;
+  }
+
+  .footer a {
+    font-size: 0.6rem;
+  }
+}
+
 .subtext {
   font-family: "Inter", sans-serif;
   color: #1d1d1d;
