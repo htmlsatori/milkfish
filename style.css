@@ -14,7 +14,6 @@ body {
   width: 100%;
 }
 body {
-  transition: background-color 0.3s;
   color: var(--black);
 }
 body[light-mode="dark"] {
