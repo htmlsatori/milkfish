@@ -2,28 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-    <title>MILKFISH</title>
+    <title>Milkfish</title>
+    <script>
+    var app = document.getElementsByTagName("BODY")[0];
+    if (localStorage.lightMode == "dark") {
+        app.setAttribute("light-mode", "dark");
+    }
+</script>
   </head>
-  <link
-    rel="icon"
-    href="assets/favicon.png"
-    media="(prefers-color-scheme: no-preference)"
-    type="image/png" />
-  <link
-    rel="icon"
-    href="/assets/favicon-dark.png"
-    media="(prefers-color-scheme: dark)"
-    type="image/png" />
-  <link
-    rel="icon"
-    href="/assets/favicon.png"
-    media="(prefers-color-scheme: light)"
-    type="image/png" />
+  
   <body>
+    <div class="big-wrap">
+    <!--nav bar start-->
     <div class="nav-bar">
       <div class="brand">
         <div class="logo">
@@ -35,11 +27,12 @@
         </div>
       </div>
       <div class="btn-wrap">
-        <button class="open-menu active">[Info]</button>
-        <button class="close-menu">[Close]</button>
+        <button class="open-menu active">[+]</button>
+        <button class="close-menu">[-]</button>
       </div>
     </div>
     <menu>
+        
       <div class="contact">
         <div class="subtext">
           <p>To discuss a potential project please get in touch.</p>
@@ -55,6 +48,7 @@
           </div>
         </span>
       </div>
+   
       <div class="services">
         <div class="subtext">Services</div>
         <ul>
@@ -65,8 +59,10 @@
           <li>site maintence</li>
         </ul>
       </div>
+   
     </menu>
-    <div class="wrapper">
+    <!--nav bar end-->
+ <div class="wrapper">
       <div class="sphere">
         <div class="green"></div>
         <div class="red"></div>
@@ -79,439 +75,564 @@
         <div class="magenta2"></div>
       </div>
     </div>
-    <div class="content">
-      <div class="big-logo">
-        <img src="/assets/milkf2.svg" alt="" />
-      </div>
-      <div class="container">
-        <div class="one" onclick=" showMarquee()" onmouseleave="hideMarquee()">
-          <div class="date1">2023 mar</div>
-          <div class="work1">electric air</div>
-          <div class="dd1">development</div>
-          <div class="industry1">portfolio</div>
-          <div class="btn1">
-            <a href="https://electricairtest.netlify.app/" target="_blank"
-              >open website</a
-            >
-          </div>
-          <div id="myMarquee" class="marquee">
-            <div class="marquee-content">
-              <div class="marquee-item">
-                <img src="/assets/project images/e1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e5.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e6.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e5.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/e6.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="two"
-          onmouseover="showMarquee2()"
-          onmouseout="hideMarquee2()">
-          <div class="date2">2023 apr</div>
-          <div class="work2">cold emporium</div>
-          <div class="dd2">design / development</div>
-          <div class="industry2">e-commerce</div>
-          <div class="btn2">
-            <a href="https://coldsite.webflow.io/" target="_blank"
-              >open website</a
-            >
-          </div>
-          <div id="myMarquee2" class="marquee">
-            <div class="marquee-content">
-              <div class="marquee-item">
-                <img
-                  src="/assets/project images/c1.png"
-                  style="filter: none"
-                  alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="/assets/project images/c2.png"
-                  style="filter: none"
-                  alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="/assets/project images/c2.png"
-                  style="filter: none"
-                  alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="/assets/project images/c4.png"
-                  style="filter: none"
-                  alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img
-                  src="/assets/project images/c5.png"
-                  style="filter: none"
-                  alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c6.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c5.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c6.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/c4.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="three"
-          onmouseover=" showMarquee3()"
-          onmouseout="hideMarquee3()">
-          <div class="date3">2023 feb</div>
-          <div class="work3">rewind project</div>
-          <div class="dd3">design / development</div>
-          <div class="industry3">e-commerce</div>
-          <div class="btn3">
-            <a href="https://rewindproject.webflow.io/" target="_blank"
-              >open website</a
-            >
-          </div>
-          <div id="myMarquee3" class="marquee">
-            <div class="marquee-content">
-              <div class="marquee-item">
-                <img src="/assets/project images/r1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r5.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r6.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r5.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/r6.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="four"
-          onmouseover=" showMarquee4()"
-          onmouseout="hideMarquee4()">
-          <div class="date4">2022 dec</div>
-          <div class="work4">harmonica</div>
-          <div class="dd4">design / development</div>
-          <div class="industry4">resturant</div>
-          <div class="btn4">
-            <a href="https://harmonicaweb.webflow.io/" target="_blank"
-              >open website</a
-            >
-          </div>
-          <div id="myMarquee4" class="marquee">
-            <div class="marquee-content">
-              <div class="marquee-item">
-                <img src="/assets/project images/h1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h6.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h7.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h8.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h6.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h7.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/h8.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="five"
-          onmouseover=" showMarquee5()"
-          onmouseout="hideMarquee5()">
-          <div class="date5">2022 nov</div>
-          <div class="work5">glimmer</div>
-          <div class="dd5">design / development</div>
-          <div class="industry5">charity</div>
-          <div class="btn5">
-            <a href="https://glimmerstudio.webflow.io/" target="_blank"
-              >open website</a
-            >
-          </div>
-          <div id="myMarquee5" class="marquee">
-            <div class="marquee-content">
-              <div class="marquee-item">
-                <img src="/assets/project images/g1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g5.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/g5.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="six"
-          onmouseover=" showMarquee6()"
-          onmouseout="hideMarquee6()">
-          <div class="date6">2022 oct</div>
-          <div class="work6">sasha's eyes</div>
-          <div class="dd6">design / development</div>
-          <div class="industry6">portfolio</div>
-          <div class="btn6">
-            <a href="https://sashaseyes.webflow.io/" target="_blank"
-              >open website</a
-            >
-          </div>
-          <div id="myMarquee6" class="marquee">
-            <div class="marquee-content">
-              <div class="marquee-item">
-                <img src="/assets/project images/s1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s5.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s6.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s1.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s2.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s3.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s4.png" alt="" />
-              </div>
-
-              <div class="marquee-item">
-                <img src="/assets/project images/s5.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="socials">
-          <a href="https://www.instagram.com/milkfishstudio/" target="_blank"
-            >[Instagram]</a
-          >
-        </div>
-        <div class="d-mode">
-          <input onclick="myFunction()" type="checkbox" id="switch" />
-          <label for="switch" />
-        </div>
-        <div class="copyright"><a href="#">[All Rights Reserved]</a></div>
-      </div>
+    <!--logo start-->
+    <div>
+      <img id="myImage" src="milkf2.svg" alt="" />
     </div>
+    <!--logo end-->
+
+    <!--table start-->
+    <div class="tb-wrapper">
+      <div class="tb-content">
+        <!--item 1-->
+            <div class="wrap clickable-div">
+                <div
+                    class="item-1"
+                    onclick="showMarquee1()"
+                    onpointerleave="hideMarquee1()"
+                     id="div1"
+               
+                   >
+                    <div class="item-date">03/23</div>
+                    <div class="item-work">electric air</div>
+                    <div class="item-dd">web</div>
+                    <div class="item-area">portfolio</div>
+                    <div class="item-btn">  <a href="https://electricairtest.netlify.app/" target="_blank"
+              >open website</a
+            ></div>
+                </div>
+                <div id="marquee1">
+                    <div class="marquee__inner-wrap">
+                        <div class="marquee__inner">
+                          <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                            background-image: url(/assets/e2.png);                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e4.png);
+                            "></div>
+                             <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e5.png);
+                            "></div>
+                             <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e6.png);
+                            "></div>
+                              <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                            background-image: url(/assets/e2.png);                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e4.png);
+                            "></div>
+                             <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e5.png);
+                            "></div>
+                             <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/e6.png);
+                            "></div>
+                            
+                         
+                          
+                    </div>
+                    </div>
+                </div>
+            </div>
+             <div class="wrap">
+                <div
+                    class="item-1"
+                    onclick="showMarquee2()"
+                    onpointerleave="hideMarquee2()"
+                     id="div2"
+                   >
+                    <div class="item-date">02/23</div>
+                    <div class="item-work">glimmer</div>
+                    <div class="item-dd">design
+                    </div>
+                    <div class="item-area">non-profit</div>
+                    <div class="item-btn">  <a href="https://glimmerstudio.webflow.io/" target="_blank"
+              >open website</a
+            ></div>
+                </div>
+                <div id="marquee2" >
+                    <div class="marquee__inner-wrap">
+                        <div class="marquee__inner">
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g2.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g5.png);
+                            "></div>
+                               <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g2.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/g5.png);
+                            "></div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="wrap">
+                <div
+                    class="item-1"
+                    onclick="showMarquee3()"
+                    onpointerleave="hideMarquee3()"
+                     id="div3"
+                    >
+                    <div class="item-date">12/22</div>
+                    <div class="item-work">emporium</div>
+                    <div class="item-dd">design</div>
+                    <div class="item-area">ecom</div>
+                    <div class="item-btn">  <a href="https://coldsite.webflow.io/" target="_blank"
+              >open website</a
+            ></div>
+                </div>
+                <div id="marquee3">
+                    <div class="marquee__inner-wrap">
+                        <div class="marquee__inner">
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c2.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c5.png);
+                            "></div>
+                             <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c6.png);
+                            "></div>
+                              <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c2.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c5.png);
+                            "></div>
+                             <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(/assets/c6.png);
+                            "></div>
+                         
+                    </div>
+                    </div>
+                </div>
+            </div>
+             <div class="wrap">
+                <div
+                    class="item-1"
+                    onclick="showMarquee4()"
+                     onpointerleave="hideMarquee4()"
+                      id="div4"
+                      >
+                    <div class="item-date">11/22</div>
+                    <div class="item-work">rewind</div>
+                    <div class="item-dd">design</div>
+                    <div class="item-area">ecom</div>
+                    <div class="item-btn">  <a href="https://rewindproject.webflow.io/" target="_blank"
+              >open website</a
+            ></div>
+                </div>
+                <div id="marquee4">
+                    <div class="marquee__inner-wrap">
+                        <div class="marquee__inner">
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/r1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                        background-image: url(assets/r2.png);"></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/r3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image:  url(assets/r4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image:  url(assets/r5.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/r6.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/r1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                        background-image: url(assets/r2.png);"></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/r3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image:  url(assets/r4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image:  url(assets/r5.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/r6.png);
+                            "></div>
+                         
+                    </div>
+                    </div>
+                </div>
+            </div>
+             <div class="wrap">
+                <div
+                    class="item-1"
+                    onclick="showMarquee5()"
+                  onpointerleave="hideMarquee5()"
+                   id="div5"
+                    >
+                    <div class="item-date">11/22</div>
+                    <div class="item-work">harmonica</div>
+                    <div class="item-dd">design</div>
+                    <div class="item-area">ecommerce</div>
+                    <div class="item-btn"> <a href="https://harmonicaweb.webflow.io/" target="_blank"
+              >open website</a
+            ></div>
+                </div>
+                <div id="marquee5">
+                    <div class="marquee__inner-wrap">
+                        <div class="marquee__inner">
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h2.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h6.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h7.png);
+                            "></div>
+                              <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h8.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h2.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h6.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h7.png);
+                            "></div>
+                              <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/h8.png);
+                            "></div>
+                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+                <div class="wrap">
+                <div
+                    class="item-1"
+                    onclick="showMarquee6()"
+                  onpointerleave="hideMarquee6()"
+                   id="div6"
+                    >
+                    <div class="item-date">10/22</div>
+                    <div class="item-work">sasha</div>
+                    <div class="item-dd">web</div>
+                    <div class="item-area">ecom</div>
+                    <div class="item-btn"> <a href="https://harmonicaweb.webflow.io/" target="_blank"
+              >open website</a
+            ></div>
+                </div>
+                <div id="marquee6">
+                    <div class="marquee__inner-wrap">
+                        <div class="marquee__inner">
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s2.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s5.png);
+                            "></div>
+                              <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s6.png);
+                            "></div>
+                             <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s1.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s2.png);
+                            "></div>
+                            <div
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s3.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s4.png);
+                            "></div>
+                            <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s5.png);
+                            "></div>
+                              <div
+                            aria-hidden="true"
+                            class="marquee__img"
+                            style="
+                                background-image: url(assets/s6.png);
+                            "></div>
+                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+            <div class="footer">
+                <div class="d-mode">
+                <input onclick="toggle_light_mode()" type="checkbox" id="switch" />
+                <label for="switch">
+                </div>
+            </div>
+    </div>
+    <!--table end-->
+
+    <!--footer start-->
+    <!--footer end-->
     <script src="app.js"></script>
+
   </body>
 </html>
