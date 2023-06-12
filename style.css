@@ -20,9 +20,7 @@ body[light-mode="dark"] {
   background-color: var(--black);
   color: var(--white);
 }
-body[light-mode="dark"] img {
-  filter: invert();
-}
+
 body[light-mode="dark"] label {
   filter: invert();
 }
@@ -43,16 +41,59 @@ body[light-mode="dark"] .sphere div {
 body[light-mode="dark"] li {
   filter: invert(1);
 }
+body[light-mode="dark"] img {
+  filter: invert(1);
+}
+
+body[light-mode="dark"] .div1:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+body[light-mode="dark"] .div2:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+body[light-mode="dark"] .div3:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+body[light-mode="dark"] .div4:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+body[light-mode="dark"] .div5:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+body[light-mode="dark"] .div6:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body[light-mode="dark"] .div1 {
+  border-bottom: 1px dotted var(--white);
+}
+body[light-mode="dark"] .div2 {
+  border-bottom: 1px dotted var(--white);
+}
+body[light-mode="dark"] .div3 {
+  border-bottom: 1px dotted var(--white);
+}
+body[light-mode="dark"] .div4 {
+  border-bottom: 1px dotted var(--white);
+}
+body[light-mode="dark"] .div5 {
+  border-bottom: 1px dotted var(--white);
+}
 
 body[light-mode="dark"] .item-1:hover {
   filter: invert(1);
 }
-body[light-mode="dark"] menu {
-  background-color: var(--black);
-}
+
 body.dark-mode .marquee-item {
   filter: invert(1);
 }
+
 .big-wrap {
   width: 100%;
   height: 100%;
@@ -64,6 +105,17 @@ body.dark-mode .marquee-item {
 li {
   list-style-type: none;
   color: #1d1d1d;
+}
+
+div {
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  vertical-align: top;
+  margin-bottom: 0;
 }
 
 .btn-wrap {
@@ -101,6 +153,7 @@ button {
 }
 #copyBtn {
   transition: none;
+  font-size: inherit;
 }
 
 .btn-div {
@@ -263,7 +316,7 @@ menu {
   left: 50%;
   top: 50%;
   z-index: 1;
-  background-color: var(--white);
+  backdrop-filter: blur(20px);
 }
 
 .open {
@@ -272,7 +325,7 @@ menu {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  padding-top: 12vh;
+  padding-top: 11vh;
   z-index: 99999999;
   justify-content: flex-start;
   font-family: "Inter", sans-serif;
@@ -350,23 +403,118 @@ img {
   width: 100%;
   height: 100%;
 }
-
-.item-1 {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dashed currentColor;
-  font-family: "Inter", sans-serif;
-  text-transform: uppercase;
-  line-height: 1.3;
-  font-size: 0.7rem;
-  letter-spacing: 0.02em;
-  vertical-align: top;
-  margin-bottom: 0;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 2rem);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-.item-1:hover {
+.div1 {
+  grid-area: 1 / 1 / 2 / 6;
+  border-bottom: 0.5px black dashed;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+.div2 {
+  grid-area: 2 / 1 / 3 / 6;
+  border-bottom: 0.5px black dashed;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+.div3 {
+  grid-area: 3 / 1 / 4 / 6;
+  border-bottom: 0.5px black dashed;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+.div4 {
+  grid-area: 4 / 1 / 5 / 6;
+  border-bottom: 0.5px black dashed;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+.div5 {
+  grid-area: 5 / 1 / 6 / 6;
+  border-bottom: 0.5px black dashed;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+.div6 {
+  grid-area: 6 / 1 / 7 / 6;
+  border-bottom: 0.5px black dashed;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+
+.date {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.work {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.dd {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.industry {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.btn {
+  grid-area: 1 / 5 / 2 / 6;
+}
+.div1:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.div2:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.div3:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.div4:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.div5:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.div6:hover {
   background-color: var(--black);
   color: var(--white);
 }
@@ -479,7 +627,7 @@ position: absolute;
 /* Position tooltip above the element */
 [data-poptip]:before {
   position: absolute;
-  width: 115px;
+  width: 150px;
   background-color: #000;
   color: #fff;
   content: attr(data-poptip);
@@ -575,23 +723,25 @@ position: absolute;
   .contact {
     padding-bottom: 60px;
   }
-}
+  .marquee__img {
+    width: max(20rem, 12vw);
+  }
 
-.footer {
-  width: 100% !important;
-  align-items: center !important;
-  position: fixed !important;
-  bottom: 0 !important;
-  padding: 1rem 1rem !important;
-  background-color: inherit !important;
-  z-index: 999999999999;
-}
+  .footer {
+    width: 100% !important;
+    align-items: center !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    padding: 1rem 1rem !important;
+    background-color: inherit !important;
+    z-index: 999999999999;
+  }
 
-#blur-image {
-  transition: filter 0.3s ease-in-out;
-}
+  #blur-image {
+    transition: filter 0.3s ease-in-out;
+  }
 
-.blur {
-  filter: blur(16px) !important;
-  cursor: pointer;
+  div {
+    font-size: 0.4rem;
+  }
 }

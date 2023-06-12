@@ -70,41 +70,6 @@ document.getElementById("copyBtn").addEventListener("click", function () {
   this.focus();
 });
 
-// Get the necessary elements
-const div1 = document.getElementById("div1");
-const div2 = document.getElementById("div2");
-const div3 = document.getElementById("div3");
-const div4 = document.getElementById("div4");
-const div5 = document.getElementById("div5");
-const image = document.getElementById("myImage");
-
-// Add click event listeners to the divs
-div1.addEventListener("click", handleClick);
-div2.addEventListener("click", handleClick);
-div3.addEventListener("click", handleClick);
-div4.addEventListener("click", handleClick);
-div5.addEventListener("click", handleClick);
-div6.addEventListener("click", handleClick);
-
-// Function to handle the click event
-function handleClick() {
-  // Add the "blur" class to the image
-  image.classList.add("blur");
-}
-
-// Function to remove the blur class from the image
-function removeBlur() {
-  image.classList.remove("blur");
-}
-
-// Add mouseleave event listeners to the divs
-div1.addEventListener("mouseleave", removeBlur);
-div2.addEventListener("mouseleave", removeBlur);
-div3.addEventListener("mouseleave", removeBlur);
-div4.addEventListener("mouseleave", removeBlur);
-div5.addEventListener("mouseleave", removeBlur);
-div6.addEventListener("mouseleave", removeBlur);
-
 // dark mode toggle //
 
 function toggle_light_mode() {
@@ -129,3 +94,13 @@ window.addEventListener(
   },
   false
 );
+
+// Get references to the div and image elements
+const divElement = document.getElementById("milk");
+const imageElement = document.getElementById("myImage");
+
+// Add a click event listener to the div
+divElement.addEventListener("click", function () {
+  // Apply the CSS filter property to blur the image
+  imageElement.style.filter = "blur(16px) invert()";
+});
