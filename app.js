@@ -52,11 +52,11 @@ function hideMarquee5() {
   document.getElementById("marquee5").style.display = "none";
 }
 function showMarquee6() {
-  document.getElementById("marquee5").style.display = "block";
+  document.getElementById("marquee6").style.display = "block";
 }
 
 function hideMarquee6() {
-  document.getElementById("marquee5").style.display = "none";
+  document.getElementById("marquee6").style.display = "none";
 }
 
 document.getElementById("copyBtn").addEventListener("click", function () {
