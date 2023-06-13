@@ -27,6 +27,7 @@ body[light-mode="dark"] label {
 
 body[light-mode="dark"] a {
   filter: invert(1);
+  --webkit-filter: invert(1);
 }
 body[light-mode="dark"] .item-btn {
   filter: invert(1);
@@ -337,6 +338,8 @@ menu {
   vertical-align: top;
   margin-bottom: 0;
   padding-left: 1rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 li {
