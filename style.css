@@ -639,4 +639,8 @@ li span {
   div {
     font-size: 0.4rem;
   }
+
+  menu {
+    backdrop-filter: blur(20px);
+  }
 }
