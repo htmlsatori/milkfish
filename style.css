@@ -64,6 +64,7 @@ html {
 
 body {
   color: var(--black);
+  background-color: blue;
 }
 
 .div1:hover,
